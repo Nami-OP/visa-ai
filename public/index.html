@@ -1,51 +1,39 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VisaMatch AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <header>
+  <header>
     <div class="logo">VisaMatch <span>AI</span></div>
   </header>
 
   <section class="hero">
-    <h1>Land Your Dream Job on OPT</h1>
-    <p>Paste any job post and get AI-powered resume tips, visa insights, and a recruiter-ready message in seconds.</p>
-    <a href="#form-section" class="cta-button">Try It Free</a>
+    <h1>Find Jobs That Match Your Visa Status. Instantly.</h1>
+    <p>VisaMatch AI helps international students find visa-sponsored jobs with AI-powered precision.</p>
+    <a href="#how-it-works" class="cta-button">Get My Report</a>
   </section>
 
-  <section class="features">
-    <div class="feature-box">
-      <h3>🧠 Smart Job Analysis</h3>
-      <p>Get a visa-friendliness score based on real keywords and hiring trends.</p>
-    </div>
-    <div class="feature-box">
-      <h3>🎯 Resume Keyword Boost</h3>
-      <p>Instantly tailor your resume to match top job descriptions using AI.</p>
-    </div>
-    <div class="feature-box">
-      <h3>💬 Recruiter DM Generator</h3>
-      <p>Send better LinkedIn messages with our smart message builder.</p>
+  <section id="how-it-works" class="steps">
+    <h2>How It Works</h2>
+    <div class="step-grid">
+      <div class="step">
+        <h3>1. Upload Resume</h3>
+        <p>Just drag and drop your resume or paste your LinkedIn.</p>
+      </div>
+      <div class="step">
+        <h3>2. AI Matches Jobs</h3>
+        <p>We scan visa-sponsoring jobs that match your profile.</p>
+      </div>
+      <div class="step">
+        <h3>3. Get Your Report</h3>
+        <p>Receive a clean, customized job report in your inbox.</p>
+      </div>
     </div>
   </section>
-
-  <section id="form-section" class="form-container">
-    <h2>Try It Now 👇</h2>
-    <form action="https://formspree.io/f/xwpbzoza" method="POST">
-      <input type="text" name="job_title" placeholder="Job Title" required />
-      <textarea name="job_description" placeholder="Paste the job description here..." required></textarea>
-      <input type="email" name="email" placeholder="Your Email" required />
-      <button type="submit">Send My AI Report</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>Built with ❤️ by an international student for international students.</p>
-  </footer>
-  <div class="badge">🚀 Built with GPT-4</div>
-  <button id="scrollTopBtn" title="Back to Top">⬆️</button>
-  </body>
+</body>
+</html>
