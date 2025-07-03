@@ -10,6 +10,8 @@
 <body>
   <header>
     <div class="logo">VisaMatch <span>AI</span></div>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
   </header>
 
   <section class="hero">
@@ -35,5 +37,45 @@
       </div>
     </div>
   </section>
+  <script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+
 </body>
+<section class="features">
+  <h2>What VisaMatch AI Offers</h2>
+  <div class="feature-grid">
+    <div class="feature-box">
+      <h3>🎯 Visa-Specific Job Matches</h3>
+      <p>AI filters jobs based on your visa type (OPT, H1B, STEM).</p>
+    </div>
+    <div class="feature-box">
+      <h3>📄 Tailored Resume Scan</h3>
+      <p>We analyze your resume to improve match accuracy.</p>
+    </div>
+    <div class="feature-box">
+      <h3>⚡ Smart Report Delivery</h3>
+      <p>Your personalized job match report gets delivered to your inbox.</p>
+    </div>
+  </div>
+</section>
+<section class="form-section">
+  <h2>Try It Out</h2>
+  <form>
+    <input type="email" placeholder="Your Email" required />
+    <input type="text" placeholder="Job Title" required />
+    <textarea placeholder="Paste Your Resume"></textarea>
+    <select required>
+      <option value="">Select Visa Status</option>
+      <option value="f1">F1</option>
+      <option value="opt">OPT</option>
+      <option value="h1b">H1B</option>
+      <option value="stem">STEM OPT</option>
+    </select>
+    <button type="submit">Send My AI Report</button>
+  </form>
+</section>
+
 </html>
