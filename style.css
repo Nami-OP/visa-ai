@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
 
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -60,6 +68,14 @@ header {
 .cta-button:hover {
   background-color: #3730a3;
 }
+button, .cta-button {
+  transition: all 0.3s ease;
+}
+
+button:hover, .cta-button:hover {
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+  transform: scale(1.02);
+}
 
 /* Form Section */
 .form-container {
@@ -103,3 +119,74 @@ footer {
   font-size: 0.9rem;
   margin-top: 40px;
 }
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background: #f0f4ff;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.feature-box {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.feature-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  color: #555;
+  font-size: 0.95rem;
+}
+.hero {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4f46e5;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
